@@ -79,10 +79,21 @@ WSGI_APPLICATION = 'crashblog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd6t9ecta9lnk0j',
+        'USER': 'cxsvrnrigxjkzs',
+        'PASSWORD': 'dda28a5d842d1336e9b0115ea471fc78f380cd1c30ef6900ef8ab7d0f6e7c657',
+        'HOST': 'ec2-23-23-151-191.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation
